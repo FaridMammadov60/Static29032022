@@ -1,0 +1,16 @@
+C:\Users\farid\Desktop\StaticAndInterfaceConsoleApp\StaticAndInterfaceConsoleApp\bin\Debug\net5.0\StaticAndInterfaceConsoleApp.exe
+C:\Users\farid\Desktop\StaticAndInterfaceConsoleApp\StaticAndInterfaceConsoleApp\bin\Debug\net5.0\StaticAndInterfaceConsoleApp.deps.json
+C:\Users\farid\Desktop\StaticAndInterfaceConsoleApp\StaticAndInterfaceConsoleApp\bin\Debug\net5.0\StaticAndInterfaceConsoleApp.runtimeconfig.json
+C:\Users\farid\Desktop\StaticAndInterfaceConsoleApp\StaticAndInterfaceConsoleApp\bin\Debug\net5.0\StaticAndInterfaceConsoleApp.runtimeconfig.dev.json
+C:\Users\farid\Desktop\StaticAndInterfaceConsoleApp\StaticAndInterfaceConsoleApp\bin\Debug\net5.0\StaticAndInterfaceConsoleApp.dll
+C:\Users\farid\Desktop\StaticAndInterfaceConsoleApp\StaticAndInterfaceConsoleApp\bin\Debug\net5.0\StaticAndInterfaceConsoleApp.pdb
+C:\Users\farid\Desktop\StaticAndInterfaceConsoleApp\StaticAndInterfaceConsoleApp\obj\Debug\net5.0\StaticAndInterfaceConsoleApp.csproj.AssemblyReference.cache
+C:\Users\farid\Desktop\StaticAndInterfaceConsoleApp\StaticAndInterfaceConsoleApp\obj\Debug\net5.0\StaticAndInterfaceConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\farid\Desktop\StaticAndInterfaceConsoleApp\StaticAndInterfaceConsoleApp\obj\Debug\net5.0\StaticAndInterfaceConsoleApp.AssemblyInfoInputs.cache
+C:\Users\farid\Desktop\StaticAndInterfaceConsoleApp\StaticAndInterfaceConsoleApp\obj\Debug\net5.0\StaticAndInterfaceConsoleApp.AssemblyInfo.cs
+C:\Users\farid\Desktop\StaticAndInterfaceConsoleApp\StaticAndInterfaceConsoleApp\obj\Debug\net5.0\StaticAndInterfaceConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\farid\Desktop\StaticAndInterfaceConsoleApp\StaticAndInterfaceConsoleApp\obj\Debug\net5.0\StaticAndInterfaceConsoleApp.dll
+C:\Users\farid\Desktop\StaticAndInterfaceConsoleApp\StaticAndInterfaceConsoleApp\obj\Debug\net5.0\refint\StaticAndInterfaceConsoleApp.dll
+C:\Users\farid\Desktop\StaticAndInterfaceConsoleApp\StaticAndInterfaceConsoleApp\obj\Debug\net5.0\StaticAndInterfaceConsoleApp.pdb
+C:\Users\farid\Desktop\StaticAndInterfaceConsoleApp\StaticAndInterfaceConsoleApp\obj\Debug\net5.0\StaticAndInterfaceConsoleApp.genruntimeconfig.cache
+C:\Users\farid\Desktop\StaticAndInterfaceConsoleApp\StaticAndInterfaceConsoleApp\obj\Debug\net5.0\ref\StaticAndInterfaceConsoleApp.dll
