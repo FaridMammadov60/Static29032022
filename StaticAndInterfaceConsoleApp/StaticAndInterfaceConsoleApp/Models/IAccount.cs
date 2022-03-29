@@ -20,7 +20,7 @@ namespace StaticAndInterfaceConsoleApp.Models
         }
         public void ShowInfo()
         {
-            System.Console.WriteLine("acount info");
+            Console.WriteLine("acount info");
         }
         static bool IsUp(string password)
         {

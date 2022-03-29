@@ -37,7 +37,7 @@ namespace StaticAndInterfaceConsoleApp.Models
 
             }
         }
-        public static int Id 
+        public int Id 
         { 
             get
             {
