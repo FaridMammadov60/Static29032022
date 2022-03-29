@@ -70,14 +70,14 @@ namespace StaticAndInterfaceConsoleApp.Models
 
         public void ShowInfo()
         {
-            Console.WriteLine($"Pasword: {Fullname}\n" +
-                $"Fullname:{Password} \n" +
-                $"Email: {Email}");
+            Console.WriteLine($"user fullname: {Fullname}\n" +
+                $"User pasword:{Password} \n" +
+                $"User email: {Email}");
         }
 
         public override string ToString()
         {
-            return $"ID: {Id}\n" +
+            return $"UserID: {Id}\n" +
                 $"Password uzunlugu {Password.Length}"; 
         }
     }
