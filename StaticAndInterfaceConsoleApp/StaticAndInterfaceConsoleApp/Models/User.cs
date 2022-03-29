@@ -32,13 +32,13 @@ namespace StaticAndInterfaceConsoleApp.Models
             {
                 if (IAccount.PasswordChecker(value))
                 {
-                    _password = value;  
-                }        
+                    _password = value;
+                }
 
             }
         }
-        public int Id 
-        { 
+        public int Id
+        {
             get
             {
                 return _id;
@@ -52,11 +52,11 @@ namespace StaticAndInterfaceConsoleApp.Models
             }
             set
             {
-                _email = value; 
+                _email = value;
             }
         }
-        public string Fullname 
-        { 
+        public string Fullname
+        {
             get
             {
                 return _fullname;
@@ -78,7 +78,7 @@ namespace StaticAndInterfaceConsoleApp.Models
         public override string ToString()
         {
             return $"UserID: {Id}\n" +
-                $"Password uzunlugu {Password.Length}"; 
+                $"Password uzunlugu {Password.Length}";
         }
     }
 }

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace StaticAndInterfaceConsoleApp.Models
 {
-    internal class Student
+    public class Student
     {
         #region Fields
-        static int _id;
+        int _id;
         string _fullname;
         double _point;
         #endregion
@@ -34,12 +34,19 @@ namespace StaticAndInterfaceConsoleApp.Models
         #endregion
 
         #region Method
-        public void StudentInfo(int Id, string Fullname, double Point)
+        public static void StudentInfo(int Id, string Fullname, double Point)
         {
             Console.WriteLine($"Studentid: {Id}\n" +
                 $"Student fullname: {Fullname}\n" +
                 $"Student point: {Point}");
         }
         #endregion
+
+        public override string ToString()
+        {
+            return $"Student id: {Id}\n" +
+                $"Student fullname: {Fullname}\n" +
+                $"Student point: {Point}";
+        }
     }
 }
