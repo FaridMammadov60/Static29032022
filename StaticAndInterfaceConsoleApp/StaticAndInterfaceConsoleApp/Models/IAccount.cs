@@ -4,19 +4,28 @@ namespace StaticAndInterfaceConsoleApp.Models
 {
     internal interface IAccount
     {
+
         public static bool PasswordChecker(string password)
         {
-            if (password.Length < 8 || IsUp(password) || IsLo(password) || IsNum(password))
+            try
             {
-            L1: Console.WriteLine("Password standartlara uygun deyil tekrar daxil edin: ");
-                password = Console.ReadLine();
-                if (password.Length < 0 || IsUp(password) || IsLo(password) || IsNum(password))
+                if (password.Length < 8 || IsUp(password) || IsLo(password) || IsNum(password))
                 {
-                    goto L1;
-                }
+                L1: Console.WriteLine("Password standartlara uygun deyil tekrar daxil edin: ");
+                    password = Console.ReadLine();
+                    if (password.Length < 0 || IsUp(password) || IsLo(password) || IsNum(password))
+                    {
+                        goto L1;
+                    }
 
+                }
+                return true;
             }
-            return true;
+            catch (Exception)
+            {
+                throw;
+            }
+            
         }
         public void ShowInfo()
         {

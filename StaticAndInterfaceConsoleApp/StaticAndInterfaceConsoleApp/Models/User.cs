@@ -24,16 +24,26 @@ namespace StaticAndInterfaceConsoleApp.Models
         #region Property
         public string Password
         {
+            
             get
             {
                 return _password;
             }
             set
             {
-                if (IAccount.PasswordChecker(value))
+                try
                 {
-                    _password = value;
+                    if (IAccount.PasswordChecker(value))
+                    {
+                        _password = value;
+                    }
                 }
+                catch (Exception ex)
+                {
+
+                    Console.WriteLine(ex.Message);
+                }
+               
 
             }
         }

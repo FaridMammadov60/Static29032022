@@ -11,9 +11,10 @@ namespace StaticAndInterfaceConsoleApp.Models
         #endregion
 
         #region Constructor
-        public Group(int length)
+        public Group(int length, string groupno)
         {
             _students = new Student[length];
+            this.GroupNo = groupno;
         }
         #endregion
 
@@ -48,7 +49,12 @@ namespace StaticAndInterfaceConsoleApp.Models
             get
             {
                 return _students;
+            }  
+            private set
+            {
+                _students=value;
             }
+            
         }
 
         public string GroupNo
@@ -127,9 +133,15 @@ namespace StaticAndInterfaceConsoleApp.Models
 
         }
 
-        public  void AddStudent()
+        public  void AddStudent(Student student)
         {
-
+            if (Students.Length>19)
+            {
+                Console.WriteLine("Massiv tam doludur");
+                return;
+            }
+            Array.Resize(ref _students,Students.Length);           
+            Students[Students.Length-1] = student;
         }
 
         #endregion

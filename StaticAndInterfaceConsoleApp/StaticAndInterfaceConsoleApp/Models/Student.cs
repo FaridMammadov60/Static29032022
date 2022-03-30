@@ -9,7 +9,7 @@ namespace StaticAndInterfaceConsoleApp.Models
     public class Student
     {
         #region Fields
-        int _id;
+        static int _id;
         string _fullname;
         double _point;
         #endregion
