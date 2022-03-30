@@ -30,7 +30,37 @@ namespace StaticAndInterfaceConsoleApp.Models
             }
         }
         public string Fullname { get; set; }
-        public double Point { get; set; }
+        public double Point 
+        {
+            get
+            {
+                return _point;
+            }
+            set
+            {
+                try
+                {
+                    if (value > 100 || value < 0)
+                    {
+                    P1: Console.WriteLine("Point 0-100 aralığında olmalıdır");
+                        Console.Write("Tələbənin balın daxil edin: ");
+                        value = Convert.ToDouble(Console.ReadLine());
+                        if (value > 100 || value < 0)
+                        {
+                            goto P1;
+                        }
+                        _point = value;
+                    }
+                    _point = value;
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                
+            }
+        }
         #endregion
 
         #region Method
@@ -46,7 +76,8 @@ namespace StaticAndInterfaceConsoleApp.Models
         {
             return $"Student id: {Id}\n" +
                 $"Student fullname: {Fullname}\n" +
-                $"Student point: {Point}";
+                $"Student point: {Point}\n" +
+                $"--------------------------------";
         }
     }
 }

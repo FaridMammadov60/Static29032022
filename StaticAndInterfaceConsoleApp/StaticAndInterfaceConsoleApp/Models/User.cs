@@ -80,15 +80,17 @@ namespace StaticAndInterfaceConsoleApp.Models
 
         public void ShowInfo()
         {
-            Console.WriteLine($"user fullname: {Fullname}\n" +
-                $"User pasword:{Password} \n" +
-                $"User email: {Email}");
+            Console.WriteLine($"User fullname: {Fullname}\n" +
+                $"\n" +
+                $"User pasword: {Password} \n" +
+                $"\n" +
+                $"User email:  {Email}");
         }
 
         public override string ToString()
         {
             return $"UserID: {Id}\n" +
-                $"Password uzunlugu {Password.Length}";
+                $"Password uzunluğu {Password.Length}";
         }
     }
 }

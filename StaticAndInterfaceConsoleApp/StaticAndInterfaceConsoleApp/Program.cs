@@ -1,5 +1,6 @@
 ﻿using StaticAndInterfaceConsoleApp.Models;
 using System;
+using System.Text;
 
 namespace StaticAndInterfaceConsoleApp
 {
@@ -7,6 +8,8 @@ namespace StaticAndInterfaceConsoleApp
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.Unicode;
+            Console.InputEncoding = Encoding.Unicode;
             try
             {
                 #region User Create
@@ -18,6 +21,7 @@ namespace StaticAndInterfaceConsoleApp
 
             #region OneMenyu
             L1:
+                Console.WriteLine("");
                 Console.WriteLine($"1. Show info\n" +
                     $"2. Create new group");
                 int a = Convert.ToInt32(Console.ReadLine());
@@ -30,19 +34,18 @@ namespace StaticAndInterfaceConsoleApp
                         goto L2;
                     default:
                         Console.Clear();
-                        Console.WriteLine("Aşağida qeyd edilen 1 ve ya 2 duymesin secin!!!");
+                        Console.WriteLine("Aşağıda qeyd edilən 1 ve ya 2 düymesin seçin!!!");
                         goto L1;
                 }
             #endregion
 
             #region AddStudent
             L2:
-                Console.Write("Qrupda tehsil alaca telebelerin sayin daxil edin\n" +
-                    "Qeyd: bir qrupda 5-den az 18-den cox telebe ola bilmez\n" +
-                    "1-18 araliginda bir reqem daxil edin: ");
+                Console.Write("Qeyd: bir qrupda 5-dən az 18-den cox tələbə ola bilməz.\n" +
+                    "Qrupda təhsil alacaq tələbələrin sayın daxil edin (1-18 aralığında): ");
                 int num = Group.StudentLimit(Convert.ToInt32(Console.ReadLine()));
 
-                Console.WriteLine("Qrupun nomresin teyin edin: ");
+                Console.Write("Qrupun nörəsin təyin edin: ");
                 string groupNo = Console.ReadLine();
                 Group group = new Group(num, groupNo)
                 {                    
@@ -50,9 +53,9 @@ namespace StaticAndInterfaceConsoleApp
                 };
                 for (int i = 0; i < num; i++)
                 {
-                    Console.WriteLine($"{i + 1} Telebenin adin ve soyadin daxil edin: ");
+                    Console.Write($"{i + 1} Tələbənin adı ve soyadın daxil edin: ");
                     string fullname = Console.ReadLine();
-                    Console.WriteLine($"{i + 1} Telebenin balin daxil edin: ");
+                    Console.Write($"{i + 1} Tələbənin balın daxil edin: ");
                     double point = Convert.ToDouble(Console.ReadLine());
                     group[i] = new Student(fullname, point);
                 }
@@ -77,14 +80,14 @@ namespace StaticAndInterfaceConsoleApp
                         group.GetAllStudent();
                         goto S1;
                     case (int)MenyuTwo.GetStudentById:
-                        Console.WriteLine("Telebenin idsin daxil edin: ");
+                        Console.Write("Tələbənin İd-sin daxil edin: ");
                         int stid = Convert.ToInt32(Console.ReadLine());
                         group.GetStudent(stid);
                         goto S1;
                     case (int)MenyuTwo.AddStudent:
-                        Console.WriteLine($"Telebenin adin ve soyadin daxil edin: ");
+                        Console.Write($"Tələbənin adın ve soyadın daxil edin: ");
                         string fullname2 = Console.ReadLine();
-                        Console.WriteLine($"Telebenin balin daxil edin: ");
+                        Console.Write($"Tələbənin balın daxil edin: ");
                         double point2 = Convert.ToDouble(Console.ReadLine());
                         Student student5 = new Student(fullname2, point2);
                         group.AddStudent(student5);

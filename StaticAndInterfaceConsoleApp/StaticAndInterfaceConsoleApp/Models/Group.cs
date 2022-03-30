@@ -71,11 +71,12 @@ namespace StaticAndInterfaceConsoleApp.Models
                 }
                 else
                 {
-                C1: Console.WriteLine("Qrup nomresin 2 böyük hərf əvvəldə və 3 rəqəm olaraq daxil edin:");
+                C1: Console.Write("Qrup nömrəsin əvvəldə 2 böyük hərf sonra 3 dənə rəqəm olaraq daxil edin: ");
                     value = Console.ReadLine();
                     if (CheckGroupNo(value))
                     {
                         _groupNo = value;
+                        return;
                     }
                     goto C1;
                 }
@@ -94,7 +95,7 @@ namespace StaticAndInterfaceConsoleApp.Models
         {
             if (num < 5 || num > 18)
             {
-            L1: Console.WriteLine("5-18 araliginde reqem daxil edin: ");
+            L1: Console.WriteLine("5-18 aralığında rəqəm daxil edin: ");
                 num = Convert.ToInt32(Console.ReadLine());
                 if (num < 5 || num > 18)
                 {
@@ -117,10 +118,11 @@ namespace StaticAndInterfaceConsoleApp.Models
 
         }
 
-        public void GetStudent(int num)
+        public void GetStudent(int? num)
         {
-
-            Console.WriteLine(Students[num]);
+            int num2 = 0;
+            num2 = Convert.ToInt32(num);            
+            Console.WriteLine(Students[num2]);
 
         }
 
