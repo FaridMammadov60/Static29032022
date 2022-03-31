@@ -142,7 +142,7 @@ namespace StaticAndInterfaceConsoleApp.Models
                 Console.WriteLine("Massiv tam doludur");
                 return;
             }
-            Array.Resize(ref _students,Students.Length);           
+            Array.Resize(ref _students,Students.Length+1);           
             Students[Students.Length-1] = student;
         }
 
