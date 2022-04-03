@@ -19,18 +19,16 @@ namespace StaticAndInterfaceConsoleApp.Models
             Fullname = fullname;
             Point = point;
             _id++;
+            Id = _id;
         }
 
         #region Property
         public int Id 
         {
-            get
-            {
-                return _id;
-            }
+            get;
         }
         public string Fullname { get; set; }
-        public double Point 
+        public double Point
         {
             get
             {
@@ -58,7 +56,7 @@ namespace StaticAndInterfaceConsoleApp.Models
 
                     throw;
                 }
-                
+
             }
         }
         #endregion
